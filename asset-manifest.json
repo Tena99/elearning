@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/elearning/static/css/main.e49f1240.css",
-    "main.js": "/elearning/static/js/main.7024144e.js",
+    "main.js": "/elearning/static/js/main.de6ccb2f.js",
     "static/js/787.860cfd23.chunk.js": "/elearning/static/js/787.860cfd23.chunk.js",
     "static/media/MuseoSansCyrl-700.svg": "/elearning/static/media/MuseoSansCyrl-700.a091a93f0f9d7d4a0780.svg",
     "static/media/MuseoSansCyrl-500.svg": "/elearning/static/media/MuseoSansCyrl-500.3f1bc78c650c14cc6c0d.svg",
@@ -30,11 +30,11 @@
     "static/media/MuseoSansCyrl-100.woff2": "/elearning/static/media/MuseoSansCyrl-100.19280463ccc4e8f45f40.woff2",
     "index.html": "/elearning/index.html",
     "main.e49f1240.css.map": "/elearning/static/css/main.e49f1240.css.map",
-    "main.7024144e.js.map": "/elearning/static/js/main.7024144e.js.map",
+    "main.de6ccb2f.js.map": "/elearning/static/js/main.de6ccb2f.js.map",
     "787.860cfd23.chunk.js.map": "/elearning/static/js/787.860cfd23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e49f1240.css",
-    "static/js/main.7024144e.js"
+    "static/js/main.de6ccb2f.js"
   ]
 }
