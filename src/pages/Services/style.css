@@ -1,0 +1,15 @@
+.service_blocks {
+  display: flex;
+  justify-content: center;
+}
+
+.service_container h3 {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

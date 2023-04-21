@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/elearning/static/css/main.e49f1240.css",
+    "main.js": "/elearning/static/js/main.edb785e6.js",
+    "static/js/787.860cfd23.chunk.js": "/elearning/static/js/787.860cfd23.chunk.js",
+    "static/media/MuseoSansCyrl-700.svg": "/elearning/static/media/MuseoSansCyrl-700.a091a93f0f9d7d4a0780.svg",
+    "static/media/MuseoSansCyrl-500.svg": "/elearning/static/media/MuseoSansCyrl-500.3f1bc78c650c14cc6c0d.svg",
+    "static/media/MuseoSansCyrl-300.svg": "/elearning/static/media/MuseoSansCyrl-300.122b87a888142abb0651.svg",
+    "static/media/MuseoSansCyrl-100.svg": "/elearning/static/media/MuseoSansCyrl-100.8fabfefaad7f6c4951c3.svg",
+    "static/media/Raleway-Light.svg": "/elearning/static/media/Raleway-Light.0076c25508fa520a8319.svg",
+    "static/media/Raleway-Light.eot": "/elearning/static/media/Raleway-Light.659a7be74eec98e7ed7a.eot",
+    "static/media/Raleway-Light.ttf": "/elearning/static/media/Raleway-Light.8d89ce666cec0065b492.ttf",
+    "static/media/MuseoSansCyrl-300.eot": "/elearning/static/media/MuseoSansCyrl-300.98b6bd36f3382069baca.eot",
+    "static/media/MuseoSansCyrl-500.eot": "/elearning/static/media/MuseoSansCyrl-500.e194645f5fab130966d7.eot",
+    "static/media/MuseoSansCyrl-300.ttf": "/elearning/static/media/MuseoSansCyrl-300.614ea7bf9ccd09cc97ee.ttf",
+    "static/media/MuseoSansCyrl-100.eot": "/elearning/static/media/MuseoSansCyrl-100.c59701951997bf59cd2b.eot",
+    "static/media/MuseoSansCyrl-500.ttf": "/elearning/static/media/MuseoSansCyrl-500.49709d8c620d342a980f.ttf",
+    "static/media/MuseoSansCyrl-100.ttf": "/elearning/static/media/MuseoSansCyrl-100.bea06168832d9ec55048.ttf",
+    "static/media/MuseoSansCyrl-700.eot": "/elearning/static/media/MuseoSansCyrl-700.d69304a7343257ffc62f.eot",
+    "static/media/MuseoSansCyrl-700.ttf": "/elearning/static/media/MuseoSansCyrl-700.6bd5d8ae1e241d5d77a5.ttf",
+    "static/media/Raleway-Light.woff": "/elearning/static/media/Raleway-Light.0f81b3788e472b2d2c7a.woff",
+    "static/media/Raleway-Light.woff2": "/elearning/static/media/Raleway-Light.58c17e48692c882bb137.woff2",
+    "static/media/MuseoSansCyrl-500.woff": "/elearning/static/media/MuseoSansCyrl-500.c841539477a3af1d2dcd.woff",
+    "static/media/MuseoSansCyrl-700.woff": "/elearning/static/media/MuseoSansCyrl-700.591dada8823b1d55b1a7.woff",
+    "static/media/MuseoSansCyrl-300.woff": "/elearning/static/media/MuseoSansCyrl-300.c0b34755c78b89596838.woff",
+    "static/media/MuseoSansCyrl-100.woff": "/elearning/static/media/MuseoSansCyrl-100.725a58bc6aa1147d769e.woff",
+    "static/media/MuseoSansCyrl-500.woff2": "/elearning/static/media/MuseoSansCyrl-500.3f19f0da4cbc518b325b.woff2",
+    "static/media/MuseoSansCyrl-700.woff2": "/elearning/static/media/MuseoSansCyrl-700.30273038b77726ddc2bf.woff2",
+    "static/media/MuseoSansCyrl-300.woff2": "/elearning/static/media/MuseoSansCyrl-300.1204acfb4aa35806bc2d.woff2",
+    "static/media/MuseoSansCyrl-100.woff2": "/elearning/static/media/MuseoSansCyrl-100.19280463ccc4e8f45f40.woff2",
+    "index.html": "/elearning/index.html",
+    "main.e49f1240.css.map": "/elearning/static/css/main.e49f1240.css.map",
+    "main.edb785e6.js.map": "/elearning/static/js/main.edb785e6.js.map",
+    "787.860cfd23.chunk.js.map": "/elearning/static/js/787.860cfd23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e49f1240.css",
+    "static/js/main.edb785e6.js"
+  ]
+}
