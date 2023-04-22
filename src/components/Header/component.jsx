@@ -1,4 +1,5 @@
 import "./style.css"
+import {  Link } from "react-router-dom";
 
 function Header () {
 
@@ -44,6 +45,9 @@ function Header () {
             </div>
             <p>eLearning Development</p>
         </div>
+</div>
+
+        <div className={"header_container second_row"}>
 
         <div className={"header_item"}>
             <div className={"header_item__image"}>
@@ -82,8 +86,37 @@ function Header () {
                 />
             </div>
         </div>
-</div>
+        </div>
 
+        <div className={"header_divider"}></div>
+        <div className={"header_menu"}>
+            <img src={process.env.PUBLIC_URL + "/images/logo.svg"}/>
+
+            <ul>
+                <li>
+                    <Link to={"/elearning"}>Home</Link>
+                </li>
+                <li>
+                    <Link to={"/services"}>Services</Link>
+                </li>
+                <li>
+                    <Link to={"/design"}>Instructional Design</Link>
+                </li>
+                <li>
+                    <Link to={"/development"}>eLearning Development</Link>
+                </li>
+                <li>
+                    <Link to={"/price"}>eLearning Price Quote</Link>
+                </li>
+                <li>
+                    <Link to={"/packages"}>eLearning Packages</Link>
+                </li>
+                <li>
+                    <Link to={"/contact"}>Contact</Link>
+                </li>
+            </ul>
+
+        </div>
     </header>
 }
 

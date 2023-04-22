@@ -11,5 +11,41 @@
   line-height: 60px;
   text-align: center;
 }
+.service_container .service_block_btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service_container .service_block_btn-container h4 {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 145%;
+  text-align: center;
+  color: #8b8585;
+  margin-right: 15px;
+}
+.service_container .service_block_btn-container .service_block_btn {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+.service_container .service_block_btn-container .service_block_btn:not(:last-of-type) {
+  margin-right: 15px;
+}
+.service_container .service_block_btn-container .service_block_btn.yellow_btn {
+  background-color: #dcce90;
+}
+.service_container .service_block_btn-container .service_block_btn.green_btn {
+  background-color: #29B4AD;
+}
+.service_container .service_block_btn-container .service_block_btn.green_transparent_btn {
+  border-color: #23B6B0;
+}
+.service_container .service_block_btn-container .service_block_btn.grey_transparent_btn {
+  border-color: #B5B7B6;
+}
 
 /*# sourceMappingURL=style.css.map */
