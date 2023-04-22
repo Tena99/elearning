@@ -96,11 +96,16 @@ function ServiceBlocks() {
 
         <div className={"service_block_btn-container"}>
             <h4>Don't like this theme? Choose another one:</h4>
-
-            <button type={"button"} className={"service_block_btn yellow_btn"} onClick={() => {setSvgStroke('white'); setSvgBackground('#DCCE90'); setSvgBorder("#DCCE90"); setLineColour("#DCCE90")}}></button>
-            <button type={"button"} className={"service_block_btn green_btn"} onClick={() => {setSvgStroke('#FFFFFF'); setSvgBackground('#29B4AD'); setSvgBorder("#29B4AD"); setLineColour("#29B4AD")}}></button>
-            <button type={"button"} className={"service_block_btn green_transparent_btn"} onClick={() => {setSvgStroke('#23B6B0'); setSvgBackground('transparent'); setSvgBorder("#23B6B0"); setLineColour("#23B6B0")}}></button>
-            <button type={"button"} className={"service_block_btn grey_transparent_btn"} onClick={() => {setSvgStroke('#B5B7B6'); setSvgBackground('transparent'); setSvgBorder("#B5B7B6"); setLineColour("#B5B7B6")}}></button>
+            <div className={"service_block_btns"}>
+            <button type={"button"} className={"service_block_btn yellow_btn"}
+                    onClick={() => {setSvgStroke('white'); setSvgBackground('#DCCE90'); setSvgBorder("#DCCE90"); setLineColour("#DCCE90")}}></button>
+            <button type={"button"} className={"service_block_btn green_btn"}
+                    onClick={() => {setSvgStroke('#FFFFFF'); setSvgBackground('#29B4AD'); setSvgBorder("#29B4AD"); setLineColour("#29B4AD")}}></button>
+            <button type={"button"} className={"service_block_btn green_transparent_btn"}
+                    onClick={() => {setSvgStroke('#23B6B0'); setSvgBackground('transparent'); setSvgBorder("#23B6B0"); setLineColour("#23B6B0")}}></button>
+            <button type={"button"} className={"service_block_btn grey_transparent_btn"}
+                    onClick={() => {setSvgStroke('#B5B7B6'); setSvgBackground('transparent'); setSvgBorder("#B5B7B6"); setLineColour("#B5B7B6")}}></button>
+            </div>
         </div>
 
     </div>

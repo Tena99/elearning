@@ -1,0 +1,102 @@
+.navigation {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  padding: 10px 0;
+  background-color: #343434;
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    justify-content: space-between;
+  }
+}
+.navigation ul {
+  display: flex;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .navigation ul {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(65vh - 77px);
+    background-color: #343434;
+    border-top: 1px solid black;
+  }
+}
+.navigation ul li {
+  list-style-type: none;
+  margin: 0 15px;
+}
+.navigation ul li:hover {
+  background-color: #eee;
+}
+@media screen and (max-width: 768px) {
+  .navigation ul li {
+    text-align: center;
+    margin: 0;
+  }
+}
+.navigation ul a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .navigation ul a {
+    font-size: 21px;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+}
+.navigation ul a:hover {
+  color: #dcce90;
+}
+
+.brand-name {
+  padding: 0 15px 0 15px;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #dcce90;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

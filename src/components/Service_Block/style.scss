@@ -1,7 +1,18 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 .service_block {
   margin-right: 25px;
   margin-left: 25px;
   max-width: 206px;
+
+  @include max-screen(612px) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 
   .service_block {
     text-align: center;

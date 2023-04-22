@@ -3,6 +3,12 @@
   margin-left: 25px;
   max-width: 206px;
 }
+@media screen and (max-width: 612px) {
+  .service_block {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
 .service_block .service_block {
   text-align: center;
 }

@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 860px) {
+  .service_blocks {
+    flex-wrap: wrap;
+  }
+}
 
 .service_container h3 {
   font-family: "Museo Sans Cyrl", sans-serif;
@@ -10,11 +15,23 @@
   font-size: 50px;
   line-height: 60px;
   text-align: center;
+  color: #999B9A;
+}
+@media screen and (max-width: 420px) {
+  .service_container h3 {
+    font-size: 40px;
+    line-height: 46px;
+  }
 }
 .service_container .service_block_btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 610px) {
+  .service_container .service_block_btn-container {
+    flex-direction: column;
+  }
 }
 .service_container .service_block_btn-container h4 {
   font-family: "Museo Sans Cyrl", sans-serif;
@@ -25,6 +42,16 @@
   text-align: center;
   color: #8b8585;
   margin-right: 15px;
+}
+@media screen and (max-width: 610px) {
+  .service_container .service_block_btn-container h4 {
+    max-width: 205px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+.service_container .service_block_btn-container .service_block_btns {
+  display: flex;
 }
 .service_container .service_block_btn-container .service_block_btn {
   height: 25px;

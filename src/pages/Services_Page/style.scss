@@ -1,6 +1,22 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin adaptive-font($maxSize, $minSize) {
+  $addSize: $maxSize - $minSize;
+  font-size: calc(#{$minSize + px} + #{$addSize} * ((100vw) / #{$maxWidth}));
+}
+
+
 .service_blocks {
   display: flex;
   justify-content: center;
+
+@include max-screen(860px) {
+  flex-wrap: wrap;
+}
 }
 
 .service_container {
@@ -11,12 +27,22 @@
     font-size: 50px;
     line-height: 60px;
     text-align: center;
+    color: #999B9A;
+
+    @include max-screen(420px) {
+      font-size: 40px;
+      line-height: 46px;
+    }
   }
 
 .service_block_btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include max-screen(610px) {
+    flex-direction: column;
+  }
 
   h4 {
     font-family: "Museo Sans Cyrl", sans-serif;
@@ -27,7 +53,17 @@
     text-align: center;
     color: #8b8585;
     margin-right: 15px;
+
+    @include max-screen(610px) {
+      max-width: 205px;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
+
+.service_block_btns {
+  display: flex;
+}
 
   .service_block_btn {
     height: 25px;
@@ -58,3 +94,4 @@
   }
 }
 }
+
