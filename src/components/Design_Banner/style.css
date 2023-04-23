@@ -1,0 +1,117 @@
+.design_banner {
+  padding: 90px 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  .design_banner {
+    flex-direction: column;
+    padding: 90px 0 90px 0;
+  }
+}
+.design_banner .design_banner_item {
+  order: 1;
+}
+@media screen and (max-width: 768px) {
+  .design_banner .design_banner_item {
+    order: 2;
+    margin: auto;
+  }
+}
+.design_banner .design_banner_item h3 {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #424242;
+  margin-bottom: 5px;
+  max-width: 437px;
+}
+@media screen and (max-width: 520px) {
+  .design_banner .design_banner_item h3 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+.design_banner .design_banner_item p {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 35px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #424242;
+  max-width: 437px;
+  margin: 0 0 40px 0;
+}
+@media screen and (max-width: 520px) {
+  .design_banner .design_banner_item p {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+.design_banner .design_banner_item a {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 22px;
+  background-color: #3D948C;
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .design_banner .design_banner_item a {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 520px) {
+  .design_banner .design_banner_item a {
+    max-width: 245px;
+    margin: auto;
+  }
+}
+.design_banner .design_banner_img {
+  order: 2;
+}
+@media screen and (max-width: 768px) {
+  .design_banner .design_banner_img {
+    order: 1;
+    margin: auto;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50%;
+    min-width: 355px;
+  }
+  .design_banner .design_banner_img img {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 520px) {
+  .design_banner .design_banner_img {
+    min-width: 230px;
+  }
+  .design_banner .design_banner_img img {
+    width: 80%;
+  }
+}
+.design_banner .design_banner_img img {
+  display: block;
+}
+
+.design_banner_line {
+  background-color: #3D948E;
+  max-width: 1175px;
+  height: 10px;
+  width: 100%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

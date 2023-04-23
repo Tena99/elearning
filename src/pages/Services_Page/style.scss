@@ -20,6 +20,11 @@
 }
 
 .service_container {
+
+  @include max-screen(768px) {
+    padding: 0 0 20px 0;
+  }
+
   h3 {
     font-family: "Museo Sans Cyrl", sans-serif;
     font-style: normal;

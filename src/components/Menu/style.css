@@ -37,7 +37,7 @@
   margin: 0 15px;
 }
 .navigation ul li:hover {
-  background-color: #eee;
+  background-color: #3D948E;
 }
 @media screen and (max-width: 768px) {
   .navigation ul li {
@@ -63,9 +63,6 @@
     width: 100%;
     padding: 1.5rem 0;
   }
-}
-.navigation ul a:hover {
-  color: #dcce90;
 }
 
 .brand-name {
