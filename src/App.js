@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import ServiceSection from "./pages/Services_Page";
 import DesignLearningBanner from "./components/Design_Learning_Banner";
 import InstructionalDesignBanner from "./components/Instructional_Design_Banner";
+import LeadForm from "./components/Lead_Form";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <ServiceSection />
         <DesignLearningBanner/>
         <InstructionalDesignBanner/>
+        <LeadForm/>
     </div>
   );
 }

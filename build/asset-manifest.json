@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/elearning/static/css/main.af7f0f8a.css",
+    "main.css": "/elearning/static/css/main.3665fa60.css",
     "main.js": "/elearning/static/js/main.ce41981f.js",
     "static/media/MuseoSansCyrl-700.svg": "/elearning/static/media/MuseoSansCyrl-700.e7a29e4c9cc3ff5a5a54.svg",
     "static/media/MuseoSansCyrl-500.svg": "/elearning/static/media/MuseoSansCyrl-500.24eab92daaa13cc35411.svg",
@@ -29,11 +29,11 @@
     "static/media/MuseoSansCyrl-100.woff2": "/elearning/static/media/MuseoSansCyrl-100.19280463ccc4e8f45f40.woff2",
     "index.html": "/elearning/index.html",
     "static/media/ingt_design_arrow.svg": "/elearning/static/media/ingt_design_arrow.c5bbe317602fe012830b.svg",
-    "main.af7f0f8a.css.map": "/elearning/static/css/main.af7f0f8a.css.map",
+    "main.3665fa60.css.map": "/elearning/static/css/main.3665fa60.css.map",
     "main.ce41981f.js.map": "/elearning/static/js/main.ce41981f.js.map"
   },
   "entrypoints": [
-    "static/css/main.af7f0f8a.css",
+    "static/css/main.3665fa60.css",
     "static/js/main.ce41981f.js"
   ]
 }
