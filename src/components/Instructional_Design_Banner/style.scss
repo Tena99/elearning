@@ -1,6 +1,15 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 .inst_design_section {
   padding: 50px 0 140px;
+
+  @include max-screen(767px) {
+    padding: 50px 0 75px;
+  }
 
 h2 {
   font-family: 'Museo Sans Cyrl', sans-serif;
@@ -23,8 +32,32 @@ h2 {
       margin-bottom: 60px;
     }
 
+    @include max-screen(767px) {
+      flex-direction: column;
+    }
+
     .inst_design_item {
       max-width: 539px;
+
+      &:first-of-type {
+        padding-left: 30px;
+        order: 1;
+
+        @include max-screen(767px) {
+          order: 2;
+          margin: auto;
+          padding: 0 30px;
+        }
+      }
+
+      &:last-of-type {
+        padding-right: 30px;
+
+        @include max-screen(767px) {
+          margin: auto;
+          padding: 0 30px;
+        }
+      }
 
       h4 {
         font-family: 'Museo Sans Cyrl', sans-serif;
@@ -68,5 +101,37 @@ h2 {
         }
       }
     }
+  }
+
+  .inst_design_img {
+    &:first-of-type {
+      margin-right: 30px;
+
+      @include max-screen(767px) {
+        margin: auto;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+
+    &:last-of-type {
+      margin-left: 30px;
+      order: 2;
+
+      @include max-screen(767px) {
+        order: 1;
+        margin: auto;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+
+
   }
 }
