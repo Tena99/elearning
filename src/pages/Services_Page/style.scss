@@ -81,12 +81,15 @@
     }
 
 
+
     &.yellow_btn {
       background-color: #dcce90 ;
+      border-color: #dcce90;
     }
 
     &.green_btn {
       background-color: #29B4AD ;
+      border-color: #29B4AD;
     }
 
     &.green_transparent_btn {
@@ -95,6 +98,12 @@
 
     &.grey_transparent_btn {
       border-color: #B5B7B6;
+    }
+
+    &.yellow_btn, &.green_btn, &.green_transparent_btn, &.grey_transparent_btn {
+      &:hover {
+        border-color: black;
+      }
     }
   }
 }

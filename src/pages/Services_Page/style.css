@@ -69,15 +69,20 @@
 }
 .service_container .service_block_btn-container .service_block_btn.yellow_btn {
   background-color: #dcce90;
+  border-color: #dcce90;
 }
 .service_container .service_block_btn-container .service_block_btn.green_btn {
   background-color: #29B4AD;
+  border-color: #29B4AD;
 }
 .service_container .service_block_btn-container .service_block_btn.green_transparent_btn {
   border-color: #23B6B0;
 }
 .service_container .service_block_btn-container .service_block_btn.grey_transparent_btn {
   border-color: #B5B7B6;
+}
+.service_container .service_block_btn-container .service_block_btn.yellow_btn:hover, .service_container .service_block_btn-container .service_block_btn.green_btn:hover, .service_container .service_block_btn-container .service_block_btn.green_transparent_btn:hover, .service_container .service_block_btn-container .service_block_btn.grey_transparent_btn:hover {
+  border-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

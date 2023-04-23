@@ -36,13 +36,13 @@
   list-style-type: none;
   margin: 0 15px;
 }
-.navigation ul li:hover {
-  background-color: #3D948E;
-}
 @media screen and (max-width: 768px) {
   .navigation ul li {
     text-align: center;
     margin: 0;
+  }
+  .navigation ul li:hover {
+    background-color: #3D948E;
   }
 }
 .navigation ul a {
@@ -56,12 +56,18 @@
   line-height: 16px;
   color: #FFFFFF;
 }
+.navigation ul a:hover {
+  color: #3D948E;
+}
 @media screen and (max-width: 768px) {
   .navigation ul a {
     font-size: 21px;
     color: #FFFFFF;
     width: 100%;
     padding: 1.5rem 0;
+  }
+  .navigation ul a:hover {
+    color: #FFFFFF;
   }
 }
 

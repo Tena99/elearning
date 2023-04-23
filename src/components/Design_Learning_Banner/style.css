@@ -54,6 +54,7 @@
   }
 }
 .design_banner .design_banner_item a {
+  display: inline-block;
   font-family: "Museo Sans Cyrl", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -64,6 +65,11 @@
   padding: 12px 22px;
   background-color: #3D948C;
   border-radius: 20px;
+  transition: 1s;
+}
+.design_banner .design_banner_item a:hover {
+  transform: scale(1.3);
+  transition: 1s;
 }
 @media screen and (max-width: 768px) {
   .design_banner .design_banner_item a {
@@ -75,6 +81,9 @@
   .design_banner .design_banner_item a {
     max-width: 245px;
     margin: auto;
+  }
+  .design_banner .design_banner_item a:hover {
+    transform: none;
   }
 }
 .design_banner .design_banner_img {
