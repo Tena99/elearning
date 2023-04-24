@@ -1,0 +1,118 @@
+.inst_design_section {
+  padding: 50px 0 140px;
+}
+@media screen and (max-width: 767px) {
+  .inst_design_section {
+    padding: 50px 0 75px;
+  }
+}
+.inst_design_section h2 {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #999B9A;
+  margin: 0 0 50px 0;
+}
+.inst_design_section .inst_design_container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+.inst_design_section .inst_design_container:first-of-type {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .inst_design_section .inst_design_container {
+    flex-direction: column;
+  }
+}
+.inst_design_section .inst_design_container .inst_design_item {
+  max-width: 539px;
+}
+.inst_design_section .inst_design_container .inst_design_item:first-of-type {
+  padding-left: 30px;
+  order: 1;
+}
+@media screen and (max-width: 767px) {
+  .inst_design_section .inst_design_container .inst_design_item:first-of-type {
+    order: 2;
+    margin: auto;
+    padding: 0 30px;
+  }
+}
+.inst_design_section .inst_design_container .inst_design_item:last-of-type {
+  padding-right: 30px;
+}
+@media screen and (max-width: 767px) {
+  .inst_design_section .inst_design_container .inst_design_item:last-of-type {
+    margin: auto;
+    padding: 0 30px;
+  }
+}
+.inst_design_section .inst_design_container .inst_design_item h4 {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #424242;
+}
+.inst_design_section .inst_design_container .inst_design_item p, .inst_design_section .inst_design_container .inst_design_item li {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #424242;
+}
+.inst_design_section .inst_design_container .inst_design_item ul {
+  list-style: none;
+}
+.inst_design_section .inst_design_container .inst_design_item ul li {
+  position: relative;
+  padding: 0 0 0 15px;
+}
+.inst_design_section .inst_design_container .inst_design_item ul li:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.inst_design_section .inst_design_container .inst_design_item ul li:before {
+  content: "";
+  background-image: url("../../../public/images/ingt_design_arrow.svg");
+  height: 24px;
+  width: 34px;
+  position: absolute;
+  top: 5px;
+  left: -40px;
+}
+.inst_design_section .inst_design_img:first-of-type {
+  margin-right: 30px;
+}
+@media screen and (max-width: 767px) {
+  .inst_design_section .inst_design_img:first-of-type {
+    margin: auto;
+  }
+  .inst_design_section .inst_design_img:first-of-type img {
+    width: 100%;
+    display: block;
+  }
+}
+.inst_design_section .inst_design_img:last-of-type {
+  margin-left: 30px;
+  order: 2;
+}
+@media screen and (max-width: 767px) {
+  .inst_design_section .inst_design_img:last-of-type {
+    order: 1;
+    margin: auto;
+  }
+  .inst_design_section .inst_design_img:last-of-type img {
+    width: 100%;
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

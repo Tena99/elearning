@@ -1,14 +1,20 @@
 import "./App.css";
-import ServiceSection from "./pages/Services_Page";
 import Header from "./components/Header"
-import DesignBanner from "./components/Design_Banner";
+import ServiceSection from "./pages/Services_Page";
+import DesignLearningBanner from "./components/Design_Learning_Banner";
+import InstructionalDesignBanner from "./components/Instructional_Design_Banner";
+import LeadForm from "./components/Lead_Form";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
         <Header/>
         <ServiceSection />
-          <DesignBanner/>
+        <DesignLearningBanner/>
+        <InstructionalDesignBanner/>
+        <LeadForm/>
+        <Footer/>
     </div>
   );
 }

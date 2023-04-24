@@ -11,7 +11,7 @@ function Design_Banner () {
         <article className={"design_banner_item"}>
             <h3>We Design Learning.</h3>
             <p>What We Can Do For You?</p>
-            <Link to={"/design"}>Know more</Link>
+            <Link to={"/services"}>Know more</Link>
         </article>
 
         <div className={"design_banner_img"}>

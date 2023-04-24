@@ -1,0 +1,137 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+.inst_design_section {
+  padding: 50px 0 140px;
+
+  @include max-screen(767px) {
+    padding: 50px 0 75px;
+  }
+
+h2 {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #999B9A;
+  margin: 0 0 50px 0;
+}
+
+  .inst_design_container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+
+    &:first-of-type {
+      margin-bottom: 60px;
+    }
+
+    @include max-screen(767px) {
+      flex-direction: column;
+    }
+
+    .inst_design_item {
+      max-width: 539px;
+
+      &:first-of-type {
+        padding-left: 30px;
+        order: 1;
+
+        @include max-screen(767px) {
+          order: 2;
+          margin: auto;
+          padding: 0 30px;
+        }
+      }
+
+      &:last-of-type {
+        padding-right: 30px;
+
+        @include max-screen(767px) {
+          margin: auto;
+          padding: 0 30px;
+        }
+      }
+
+      h4 {
+        font-family: 'Museo Sans Cyrl', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: #424242;
+      }
+
+      p, li {
+        font-family: 'Museo Sans Cyrl', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        color: #424242;
+      }
+
+      ul {
+        list-style: none;
+
+
+        li {
+          position: relative;
+          padding: 0 0 0 15px;
+
+          &:not(:last-of-type) {
+            margin-bottom: 15px;
+          }
+
+          &:before {
+            content: "";
+            background-image: url("../../../public/images/ingt_design_arrow.svg");
+            height: 24px;
+            width: 34px;
+            position: absolute;
+            top: 5px;
+            left: -40px;
+          }
+        }
+      }
+    }
+  }
+
+  .inst_design_img {
+    &:first-of-type {
+      margin-right: 30px;
+
+      @include max-screen(767px) {
+        margin: auto;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+
+    &:last-of-type {
+      margin-left: 30px;
+      order: 2;
+
+      @include max-screen(767px) {
+        order: 1;
+        margin: auto;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+
+
+  }
+}

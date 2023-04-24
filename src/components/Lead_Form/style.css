@@ -1,0 +1,106 @@
+.lead_form {
+  padding: 50px 0 62px 0;
+  background-color: #3D948C;
+}
+.lead_form h2 {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+  padding: 0 15px;
+}
+@media screen and (max-width: 480px) {
+  .lead_form h2 {
+    font-size: 44px;
+    line-height: 48px;
+    margin: 0 0 25px 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .lead_form h2 {
+    font-size: 38px;
+    line-height: 38px;
+  }
+}
+.lead_form h3 {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 0 62px 0;
+  padding: 0 15px;
+}
+.lead_form form {
+  display: flex;
+  flex-direction: column;
+}
+.lead_form form input, .lead_form form textarea {
+  max-width: 433px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px 35px;
+  border-radius: 27.5px;
+  outline: none;
+  border: none;
+  background-color: #41A297;
+  box-sizing: border-box;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.lead_form form input::placeholder, .lead_form form textarea::placeholder {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.lead_form form textarea {
+  min-height: 180px;
+  resize: none;
+  margin-bottom: 57px;
+}
+.lead_form form button {
+  max-width: 205px;
+  width: 100%;
+  margin: auto;
+  background-color: #3D948C;
+  outline: none;
+  border: 3px solid #FFFFFF;
+  border-radius: 27.5px;
+  padding: 15px 79px;
+  color: #FFFFFF;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.lead_form form .error {
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 473px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.lead_form form .error p {
+  color: rgb(220, 206, 144);
+  padding: 5px 0 0 20px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
