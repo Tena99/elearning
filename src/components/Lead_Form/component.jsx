@@ -70,6 +70,7 @@ function Lead_Form () {
                      {errors.email && touched.email && errors.email}
                      </p>
                  </div>
+                    <div className={"lead_form error"}>
                     <textarea
                         name="message"
                         placeholder={"Your Message"}
@@ -78,6 +79,7 @@ function Lead_Form () {
                         value={values.message}
                     />
                     {errors.message && touched.message && errors.message}
+                    </div>
                     <button type="submit" disabled={isSubmitting}>
                         Send
                     </button>

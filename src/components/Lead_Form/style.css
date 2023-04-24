@@ -11,6 +11,20 @@
   text-align: center;
   color: #FFFFFF;
   margin: 0 0 30px 0;
+  padding: 0 15px;
+}
+@media screen and (max-width: 480px) {
+  .lead_form h2 {
+    font-size: 44px;
+    line-height: 48px;
+    margin: 0 0 25px 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .lead_form h2 {
+    font-size: 38px;
+    line-height: 38px;
+  }
 }
 .lead_form h3 {
   font-family: "Museo Sans Cyrl", sans-serif;
@@ -21,6 +35,7 @@
   text-align: center;
   color: #FFFFFF;
   margin: 0 0 62px 0;
+  padding: 0 15px;
 }
 .lead_form form {
   display: flex;
@@ -74,12 +89,13 @@
   line-height: 24px;
 }
 .lead_form form .error {
-  padding: 0;
   margin-bottom: 23px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 433px;
+  max-width: 473px;
   width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 .lead_form form .error p {
   color: rgb(220, 206, 144);

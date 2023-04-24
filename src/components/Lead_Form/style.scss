@@ -1,3 +1,9 @@
+@mixin max-screen($res){
+  @media screen and (max-width: $res){
+    @content;
+  }
+}
+
 .lead_form {
   padding: 50px 0 62px 0;
   background-color: #3D948C;
@@ -10,7 +16,19 @@
     line-height: 60px;
     text-align: center;
     color: #FFFFFF;
-    margin: 0 0 30px 0
+    margin: 0 0 30px 0;
+    padding: 0 15px;
+
+    @include max-screen(480px) {
+      font-size: 44px;
+      line-height: 48px;
+      margin: 0 0 25px 0;
+    }
+
+    @include  max-screen(380px) {
+      font-size: 38px;
+      line-height: 38px;
+    }
   }
 
   h3 {
@@ -21,7 +39,8 @@
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
-    margin: 0 0 62px 0
+    margin: 0 0 62px 0;
+    padding: 0 15px;
   }
 
   form {
@@ -82,12 +101,13 @@ display: flex;
     }
 
     .error {
-      padding: 0;
       margin-bottom: 23px;
       margin-right: auto;
       margin-left: auto;
-      max-width: 433px;
+      max-width: 473px;
       width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
 
       p {
         color: rgb(220, 206, 144);
