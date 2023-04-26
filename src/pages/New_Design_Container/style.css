@@ -1,0 +1,22 @@
+.design_change_old {
+  padding: 10px;
+  background-color: #3D948E;
+  position: absolute;
+  color: white;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 145%;
+  text-decoration: none;
+  border-radius: 20px;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+.design_change_old:hover {
+  background-color: #dcce90;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -2,3 +2,9 @@
     max-width: 1200px;
     margin: auto;
 }
+
+.App a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}

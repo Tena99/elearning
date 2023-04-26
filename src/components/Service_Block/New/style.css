@@ -1,0 +1,112 @@
+.n_service_blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 779px) {
+  .n_service_blocks {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.n_service_container {
+  padding: 65px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .n_service_container {
+    padding: 65px 15px 20px 15px;
+  }
+}
+.n_service_container .n_service_controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 75px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 920px) {
+  .n_service_container .n_service_controls {
+    justify-content: space-evenly;
+  }
+}
+.n_service_container h3 {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: start;
+  color: #999B9A;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 420px) {
+  .n_service_container h3 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+.n_service_container .n_service_block_btn-container {
+  display: flex;
+  align-items: center;
+}
+.n_service_container .n_service_block_btn-container:not(:last-of-type) {
+  margin-right: 55px;
+}
+@media screen and (max-width: 920px) {
+  .n_service_container .n_service_block_btn-container:not(:last-of-type) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 920px) {
+  .n_service_container .n_service_block_btn-container {
+    margin-bottom: 25px;
+  }
+}
+.n_service_container .n_service_block_btn-container h5 {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 145%;
+  text-align: center;
+  color: #343434;
+  margin: 0 10px 0 0;
+}
+@media screen and (max-width: 610px) {
+  .n_service_container .n_service_block_btn-container {
+    flex-direction: column;
+  }
+}
+.n_service_container .n_service_block_btn-container .n_service_block_btns {
+  display: flex;
+}
+.n_service_container .n_service_block_btn-container .n_service_block_btn {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+.n_service_container .n_service_block_btn-container .n_service_block_btn:not(:last-of-type) {
+  margin-right: 15px;
+}
+.n_service_container .n_service_block_btn-container .n_service_block_btn.yw_btn {
+  background-color: #dcce90;
+  border-color: #dcce90;
+}
+.n_service_container .n_service_block_btn-container .n_service_block_btn.gn_btn {
+  background-color: #29B4AD;
+  border-color: #29B4AD;
+}
+.n_service_container .n_service_block_btn-container .n_service_block_btn.gn_tr_btn {
+  border-color: #23B6B0;
+}
+.n_service_container .n_service_block_btn-container .n_service_block_btn.gr_tr_btn {
+  border-color: #B5B7B6;
+}
+.n_service_container .n_service_block_btn-container .n_service_block_btn.yw_btn:hover, .n_service_container .n_service_block_btn-container .n_service_block_btn.gn_btn:hover, .n_service_container .n_service_block_btn-container .n_service_block_btn.gn_tr_btn:hover, .n_service_container .n_service_block_btn-container .n_service_block_btn.gr_tr_btn:hover {
+  border-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

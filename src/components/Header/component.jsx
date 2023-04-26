@@ -92,9 +92,7 @@ function Header () {
             </div>
         </div>
         </div>
-
-        <div className={"header_divider"}></div>
-            <Menu/>
+            <Menu />
     </header>
 }
 

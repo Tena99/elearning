@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  padding: 10px 0;
+  padding: 14px 0;
   background-color: #343434;
   color: black;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
@@ -18,6 +18,7 @@
 .navigation ul {
   display: flex;
   padding: 0;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   .navigation ul {
@@ -100,6 +101,11 @@
   .navigation-menu.expanded ul {
     display: block;
   }
+}
+
+.header_divider {
+  height: 10px;
+  background-color: #3D948E;
 }
 
 /*# sourceMappingURL=style.css.map */

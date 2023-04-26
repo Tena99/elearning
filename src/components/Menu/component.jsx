@@ -2,13 +2,16 @@ import { useState } from "react";
 import {Link} from "react-router-dom";
 import "./style.css"
 
-export default function Navbar() {
+export default function Menu() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
 
     return (
+        <>
+            <div className={"header_divider"}></div>
+
         <nav className="navigation">
-            <Link to={"/elearning"}  className="brand-name">
-                <img src={process.env.PUBLIC_URL + "/images/logo.svg"}/>
+            <Link to={"/"}  className="brand-name">
+                <img src={process.env.PUBLIC_URL + "/images/logo.svg"} alt={"logo"}/>
             </Link>
             <button
                 className="hamburger"
@@ -39,26 +42,27 @@ export default function Navbar() {
                         <Link to={"/elearning"}>Home</Link>
                     </li>
                     <li>
-                        <Link to={"/services"}>Services</Link>
+                        <Link to={"./services"}>Services</Link>
                     </li>
                     <li>
-                        <Link to={"/design"}>Instructional Design</Link>
+                        <Link to={"./design"}>Instructional Design</Link>
                     </li>
                     <li>
-                        <Link to={"/development"}>eLearning Development</Link>
+                        <Link to={"./development"}>eLearning Development</Link>
                     </li>
                     <li>
-                        <Link to={"/price"}>eLearning Price Quote</Link>
+                        <Link to={"./price"}>eLearning Price Quote</Link>
                     </li>
                     <li>
-                        <Link to={"/packages"}>eLearning Packages</Link>
+                        <Link to={"./packages"}>eLearning Packages</Link>
                     </li>
                     <li>
-                        <Link to={"/contact"}>Contact</Link>
+                        <Link to={"./contact"}>Contact</Link>
                     </li>
                 </ul>
 
             </div>
         </nav>
+        </>
     );
 }
