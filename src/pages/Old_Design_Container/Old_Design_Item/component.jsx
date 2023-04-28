@@ -1,5 +1,5 @@
 import ServiceSection from "../../../components/Service_Block/Old/component";
-import DesignLearningBanner from "../../../components/Design_Learning_Banner/component";
+import DesignLearningBanner from "../../../components/Design_Learning_Banner/Old/component";
 import InstructionalDesignBanner from "../../../components/Instructional_Design_Banner/component";
 import LeadForm from "../../../components/Lead_Form/component";
 

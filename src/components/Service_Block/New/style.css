@@ -14,6 +14,7 @@
   padding: 65px 20px;
   max-width: 1100px;
   margin: auto;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .n_service_container {

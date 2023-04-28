@@ -4,6 +4,7 @@ import "./style.css";
 import ServiceItem from "./Service_item";
 import Search from "../../Search";
 import Select from "../../Select"
+import ScrollLine from "../../Scroll_Line"
 
 
 function ServiceBlocks() {
@@ -33,6 +34,7 @@ function ServiceBlocks() {
 
     return (
         <div className={"n_service_container"}>
+
             <h3>Services We Provide</h3>
 
             <div className={"n_service_controls"}>

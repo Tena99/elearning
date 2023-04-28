@@ -1,30 +1,125 @@
-.header_carousel_item_container {
+@mixin max-screen($res){
+  @media screen and (max-width: $res){
+    @content;
+  }
+}
+
+.header_carousel_container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+  height: 15px;
+  width: 15px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: 1s;
+
+  &.active {
+    transform: scale(1.5)!important;
+    background: #FFFFFF;
+  }
+}
+
+.owl-dots {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  top: 45%;
+  right: 10px;
+
+  @include max-screen(1024px) {
+    top: 41%;
+    right: 20px;
+  }
+
+  @include max-screen(650px) {
+    top: 34%;
+  }
+
+  @include max-screen(375px) {
+    top: 18%;
+  }
+}
+
+.owl-stage {
+  display: flex;
+  align-items: stretch;
+}
+
+.item {
+  height: 100%;
+}
+
+.header_carousel_container {
   display: flex;
   justify-content: space-evenly;
-  padding: 145px 0;
+  padding: 145px 70px;
   position: relative;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  @include max-screen(768px) {
+    padding: 100px 70px;
+  }
+
+  @include max-screen(375px) {
+    padding: 50px 70px;
+  }
 }
 
 .header_carousel_item {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
+  height: 99%;
 
-  &:not(:first-of-type) {
-    max-width: 400px;
-    width: 100%;
-  }
-
-
-  &:first-of-type {
-    background-color: #FFFFFF;
-    padding: 0 41px;
+  p {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    max-width: 130px;
+    color: #424242;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .header_carousel_item_img {
+
+  &:not(.logo) {
+    height: 100%;
+  }
+
+
+  &.logo {
+margin-bottom: 60px;
+
+    @include max-screen(920px) {
+      margin-bottom: 30px;
+    }
+
+    @include max-screen(340px) {
+      margin-bottom: 0
+    }
+
+    img {
+      display: block;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
+  }
+
   img {
     display: block;
     width: 100%;
@@ -43,19 +138,6 @@
   }
 }
 
-.header_carousel_caption {
-    position: absolute;
-    top: 405px;
-
-  &.one {
-    left: 42%;
-  }
-
-  &.two {
-    right: 25%;
-  }
-}
-
 .header_carousel_theme {
   font-family: 'Museo Sans Cyrl', sans-serif;
   font-style: normal;
@@ -69,46 +151,4 @@
   border-radius: 15px;
   padding: 8px 10px;
   text-align: start;
-}
-
-.carousel-indicators {
-  position: absolute;
-  right: 4%;
-  bottom: 40%;
-   left: initial;
-  margin-right: 0;
-   margin-left: 0;
-  flex-direction: column;
- }
-
-.carousel-indicators [data-bs-target] {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-}
-
-.carousel-item {
-  transform: translate3d(0, 100%, 0);
-  transition: 0.7s;
-}
-
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
-  transform: translate3d(0, 0, 0);
-}
-
-.carousel.vertical .carousel-item-next,
-.carousel.vertical .carousel-item-prev {
-  transform: translate3d(0, 100%, 0);
-}
-
-.carousel.vertical .carousel-item-right.active,
-.carousel.vertical .carousel-item-next {
-  transform: translate3d(0, -100%, 0);
-}
-
-.carousel.vertical .carousel-item-left.active,
-.carousel.vertical .carousel-item-prev {
-  transform: translate3d(0, 100%, 0);
 }

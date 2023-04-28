@@ -1,0 +1,15 @@
+.scroll-line {
+  position: absolute;
+  top: 0;
+  left: -575px;
+  width: 200%;
+  overflow: hidden;
+  text-align: center;
+  height: 260vh;
+}
+.scroll-line svg {
+  display: inline-block;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

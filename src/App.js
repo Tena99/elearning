@@ -1,12 +1,21 @@
 import "./App.css";
-import {Link, Outlet} from "react-router-dom";
+import {Link} from "react-router-dom";
+
 
 
 function App() {
   return (
     <div className="App">
-        <Link to={"/n"}>Новый дизайн</Link>
-        <Link to={"/o"}>Старый дизайн</Link>
+
+
+
+        <div className={"design_choice"}>
+            <h1>Greetings!</h1>
+            <p>We recently changed the design and would like you to check it out. Otherwise you can always return to the old version of the site. Thank you!</p>
+
+        <Link to={"/n"}>New Design</Link>
+        <Link to={"/o"}>Old Design</Link>
+        </div>
     </div>
   );
 }

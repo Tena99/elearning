@@ -1,173 +1,142 @@
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import 'owl.carousel';
 import "./style.css"
 import Menu from "../Menu";
+import ThemeSwitch from "../Theme_Switch";
+import  { useState } from "react";
 
-function Carousel_Component() {
-    return (
-        <div className={"header_carousel"} style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/images/header_background.jpg)`,
-            backgroundSize: 'cover'}}>
+function Carousel() {
 
-        <Carousel interval={null} controls={false} className={"vertical"}>
 
-            {/*First slide*/}
+    return <div className={"header_carousel"} style={{
+        background: `linear-gradient(0deg, rgba(52, 52, 52, 0.45), rgba(52, 52, 52, 0.45)), url(${process.env.PUBLIC_URL}/images/header_background.jpg)`,
+        backgroundSize: 'cover',  backgroundRepeat: "no-repeat",
+    }}>
+        <OwlCarousel className='header_carousel_container'
+                     margin={10}
+                     nav={false}
+                     dots={true}
+                     items={1}
+                     slideBy={3}
+                     loop={null}
+                     autoplay={true}
+                     responsive={{
+                         650: {items: 2},
+                         1024:{items:3}
+                     }}>
 
-            <Carousel.Item >
-                <div className={"header_carousel_item_container"}>
-
-                    <div className={"header_carousel_item"}>
-                        <div className={"header_carousel_item_img"}>
-                            <img
-                                className="d-block w-20"
-                                src={ process.env.PUBLIC_URL + "/images/header_logo.svg"}
-                                alt="First slide"
-                            />
-                        </div>
-
-                        <button className={"header_carousel_theme"}>Daymode</button>
+            <div className='item'>
+                <div className={"header_carousel_item"}>
+                    <div className={"header_carousel_item_img logo"}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/header_logo.svg"}
+                            alt="First slide"
+                        />
+                        <p>Taking Learning to the Next Level</p>
                     </div>
-
-                    <div className={"header_carousel_item"}>
-                        <div className={"header_carousel_item_img"}>
-                            <img
-                                className="d-block w-20"
-                                src={ process.env.PUBLIC_URL + "/images/header_services(2.0).jpg"}
-                                alt="First slide"
-                            />
-                        </div>
-
-                        <div className={"header_carousel_caption one"}>
-                            <Carousel.Caption>
-                                <h3>Services</h3>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-
-                    <div className={"header_carousel_item"}>
-                        <div className={"header_carousel_item_img"}>
-                            <img
-                                className="d-block w-20"
-                                src={ process.env.PUBLIC_URL + "/images/header_inst_design.png"}
-                                alt="First slide"
-                            />
-                        </div>
-
-                        <div className={"header_carousel_caption two"}>
-                            <Carousel.Caption>
-                                <h3>Instructional Design</h3>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-
+                    <ThemeSwitch/>
                 </div>
-            </Carousel.Item>
+            </div>
 
-            {/*Second slide*/}
-
-            <Carousel.Item >
-                <div className={"header_carousel_item_container"}>
-
-                    <div className={"header_carousel_item"}>
-                        <div className={"header_carousel_item_img"}>
-                            <img
-                                className="d-block w-20"
-                                src={ process.env.PUBLIC_URL + "/images/header_logo.svg"}
-                                alt="Second slide"
-                            />
-                        </div>
-
-                        <button className={"header_carousel_theme"}>Daymode</button>
+            <div className='item'>
+                <div className={"header_carousel_item"}>
+                    <div className={"header_carousel_item_img"}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/header_services(2.0).png"}
+                            alt="First slide"
+                        />
                     </div>
-
-                    <div className={"header_carousel_item"}>
-                        <div className={"header_carousel_item_img"}>
-                            <img
-                                className="d-block w-20"
-                                src={ process.env.PUBLIC_URL + "/images/header_development.png"}
-                                alt="Second slide"
-                            />
-                        </div>
-
-                        <div className={"header_carousel_caption one"}>
-                            <Carousel.Caption>
-                                <h3>eLearning Development</h3>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-
-                    <div className={"header_carousel_item"}>
-                        <div className={"header_carousel_item_img"}>
-                            <img
-                                className="d-block w-20"
-                                src={ process.env.PUBLIC_URL + "/images/header_price.png"}
-                                alt="Second slide"
-                            />
-                        </div>
-
-                        <div className={"header_carousel_caption two"}>
-                            <Carousel.Caption>
-                                <h3>eLearning Price Quote</h3>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-
                 </div>
-            </Carousel.Item>
+            </div>
 
-            {/*Third slide*/}
-
-            <Carousel.Item >
-                <div className={"header_carousel_item_container"}>
-
-                    <div className={"header_carousel_item"}>
-                        <div className={"header_carousel_item_img"}>
-                            <img
-                                className="d-block w-20"
-                                src={ process.env.PUBLIC_URL + "/images/header_logo.svg"}
-                                alt="Third slide"
-                            />
-                        </div>
-
-                        <button className={"header_carousel_theme"}>Daymode</button>
+            <div className='item'>
+                <div className={"header_carousel_item"}>
+                    <div className={"header_carousel_item_img"}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/header_inst_design.png"}
+                            alt="First slide"
+                        />
                     </div>
-
-                    <div className={"header_carousel_item"}>
-                        <div className={"header_carousel_item_img"}>
-                            <img
-                                className="d-block w-20"
-                                src={ process.env.PUBLIC_URL + "/images/header_packages.png"}
-                                alt="Third slide"
-                            />
-                        </div>
-
-                        <div className={"header_carousel_caption one"}>
-                            <Carousel.Caption>
-                                <h3>eLearning Packages</h3>
-                            </Carousel.Caption>
-                        </div>
-                    </div>
-
-                    <div className={"header_carousel_item"}>
-                        <div className={"header_carousel_item_img third"}>
-                            <img
-                                className="d-block w-100"
-                                src={ process.env.PUBLIC_URL + "/images/header_contact.svg"}
-                                alt="Third slide"
-                            />
-                        </div>
-
-                        <div className={"header_carousel_caption two"}>
-                        </div>
-                    </div>
-
                 </div>
-            </Carousel.Item>
-        </Carousel>
+            </div>
 
-            <Menu/>
-        </div>
-    );
+            <div className='item '>
+                <div className={"header_carousel_item"}>
+                    <div className={"header_carousel_item_img logo"}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/header_logo.svg"}
+                            alt="Second slide"
+                        />
+                        <p>Taking Learning to the Next Level</p>
+                    </div>
+                    {/*<ThemeSwitch/>*/}
+                </div>
+            </div>
+
+            <div className='item'>
+                <div className={"header_carousel_item"}>
+                    <div className={"header_carousel_item_img"}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/header_development.png"}
+                            alt="Second slide"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div className='item'>
+                <div className={"header_carousel_item"}>
+                    <div className={"header_carousel_item_img"}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/header_price.png"}
+                            alt="Second slide"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div className='item'>
+                <div className={"header_carousel_item"}>
+                    <div className={"header_carousel_item_img logo"}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/header_logo.svg"}
+                            alt="Third slide"
+                        />
+                        <p>Taking Learning to the Next Level</p>
+                    </div>
+                    {/*<ThemeSwitch />*/}
+                </div>
+            </div>
+
+            <div className='item'>
+                <div className={"header_carousel_item"}>
+                    <div className={"header_carousel_item_img"}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/header_packages.png"}
+                            alt="Third slide"
+                        />
+                    </div>
+                </div>
+
+            </div>
+            <div className='item'>
+                <div className={"header_carousel_item"}>
+                    <div className={"header_carousel_item_img third"}>
+                        <img
+                            src={process.env.PUBLIC_URL + "/images/header_contact.svg"}
+                            alt="Third slide"
+                        />
+                    </div>
+                </div>
+            </div>
+        </OwlCarousel>;
+
+        <Menu/>
+    </div>
+
 }
 
-export default Carousel_Component;
+export default Carousel

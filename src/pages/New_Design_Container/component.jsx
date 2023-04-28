@@ -1,6 +1,6 @@
 import {Link, Outlet} from "react-router-dom";
 import Footer from "../../components/Footer";
-import Carousel_Component from "../../components/Carousel/component";
+import Carousel_Component from "../../components/Carousel";
 import "./style.css"
 
 function New_design () {
