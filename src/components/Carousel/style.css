@@ -46,6 +46,32 @@
   align-items: stretch;
 }
 
+@media screen and (max-width: 768px) {
+  .owl-item:nth-child(4) {
+    display: none;
+  }
+  .owl-item:nth-child(7) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .owl-dots button:nth-child(5) {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .owl-dots button:nth-child(5) {
+    display: block;
+  }
+  .owl-dots button:nth-child(8) {
+    display: none;
+  }
+  .owl-dots button:nth-child(9) {
+    display: none;
+  }
+}
+
 .item {
   height: 100%;
 }

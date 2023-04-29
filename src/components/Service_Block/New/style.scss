@@ -63,6 +63,7 @@ justify-content: space-evenly;
   .n_service_block_btn-container {
     display: flex;
     align-items: center;
+    padding: 10px;
 
     &:not(:last-of-type) {
       margin-right: 55px;

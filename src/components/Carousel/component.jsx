@@ -6,9 +6,27 @@ import 'owl.carousel';
 import "./style.css"
 import Menu from "../Menu";
 import ThemeSwitch from "../Theme_Switch";
-import  { useState } from "react";
+import  { useState, useEffect } from "react";
+
+
 
 function Carousel() {
+
+    const [isDark, setIsDark] = useState(false);
+
+    const handleToggle = () => {
+        setIsDark(!isDark);
+    };
+
+    const [switchOn, setSwitchOn] = useState(isDark);
+
+    useEffect(() => {
+        setSwitchOn(isDark);
+    }, [isDark]);
+
+    useEffect(() => {
+        setIsDark(switchOn);
+    }, [switchOn]);
 
 
     return <div className={"header_carousel"} style={{
@@ -22,7 +40,8 @@ function Carousel() {
                      items={1}
                      slideBy={3}
                      loop={null}
-                     autoplay={true}
+                     mouseDrag={false}
+                     touchDrag={false}
                      responsive={{
                          650: {items: 2},
                          1024:{items:3}
@@ -37,7 +56,7 @@ function Carousel() {
                         />
                         <p>Taking Learning to the Next Level</p>
                     </div>
-                    <ThemeSwitch/>
+                    <ThemeSwitch isDark={isDark} handleToggle={handleToggle} setSwitchOn={setSwitchOn} switchOn={switchOn} />
                 </div>
             </div>
 
@@ -72,7 +91,7 @@ function Carousel() {
                         />
                         <p>Taking Learning to the Next Level</p>
                     </div>
-                    {/*<ThemeSwitch/>*/}
+                    <ThemeSwitch isDark={isDark} handleToggle={handleToggle} setSwitchOn={setSwitchOn} switchOn={switchOn} />
                 </div>
             </div>
 
@@ -107,7 +126,7 @@ function Carousel() {
                         />
                         <p>Taking Learning to the Next Level</p>
                     </div>
-                    {/*<ThemeSwitch />*/}
+                    <ThemeSwitch isDark={isDark} handleToggle={handleToggle} setSwitchOn={setSwitchOn} switchOn={switchOn} />
                 </div>
             </div>
 

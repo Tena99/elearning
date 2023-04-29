@@ -1,21 +1,20 @@
 import "./style.css";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 
-function ThemeSwitch() {
-    const [isDark, setIsDark] = useState(false);
+function ThemeSwitch({isDark, handleToggle, setSwitchOn, switchOn}) {
 
-    const handleToggle = () => {
-        setIsDark(!isDark);
+    useEffect(() => {
+        handleToggle(switchOn);
+    }, [switchOn, handleToggle]);
+
+    const handleChange = (event) => {
+        setSwitchOn(event.target.checked);
     };
 
     return (
         <>
-            <input
-                type="checkbox"
-                id="toggle"
-                checked={isDark}
-                onChange={handleToggle}
+            <input type="checkbox" checked={switchOn} onChange={handleChange} id={"toggle"}
             />
 
             <label className="toggle" htmlFor="toggle">

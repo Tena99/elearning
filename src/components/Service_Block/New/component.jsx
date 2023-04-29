@@ -60,7 +60,7 @@ function ServiceBlocks() {
 
                 <div className={"n_service_block_btn-container"}>
                 <h5>Occupation</h5>
-            <Select options={["All", "Instructional Design", "Elearning Development", "Mobile Learning", "Instructor-led Training"]}/>
+            <Select options={["Instructional Design", "Elearning Development", "Mobile Learning", "Instructor-led Training"]}/>
                 </div>
             </div>
 

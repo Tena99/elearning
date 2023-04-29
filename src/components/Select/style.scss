@@ -1,3 +1,43 @@
-.select_btn {
-  width: fit-content;
+.custom-select {
+  display: flex;
+}
+
+.select-container {
+  display: flex;
+align-items: center;
+}
+
+.option-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.selected-option_item, .option {
+  border: none;
+  background: #EBEBEB;
+  border-radius: 14.5px;
+  padding: 3px 18px;
+  box-sizing: border-box;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 145%;
+  color: #343434;
+  outline: none;
+  margin-right: 10px;
+}
+
+.remove-option {
+padding: 0 5px;
+}
+
+.option {
+margin-bottom: 10px;
+
+  &:not(:last-of-type) {
+    margin-right: 10px;
+  }
 }
