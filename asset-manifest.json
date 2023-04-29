@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/elearning/static/css/main.9730dece.css",
-    "main.js": "/elearning/static/js/main.0968a366.js",
+    "main.css": "/elearning/static/css/main.32690f5f.css",
+    "main.js": "/elearning/static/js/main.903e31c3.js",
     "static/media/MuseoSansCyrl-700.svg": "/elearning/static/media/MuseoSansCyrl-700.e7a29e4c9cc3ff5a5a54.svg",
     "static/media/MuseoSansCyrl-500.svg": "/elearning/static/media/MuseoSansCyrl-500.24eab92daaa13cc35411.svg",
     "static/media/MuseoSansCyrl-300.svg": "/elearning/static/media/MuseoSansCyrl-300.dfb9e13cf7688ba216ac.svg",
@@ -29,11 +29,11 @@
     "static/media/MuseoSansCyrl-100.woff2": "/elearning/static/media/MuseoSansCyrl-100.19280463ccc4e8f45f40.woff2",
     "index.html": "/elearning/index.html",
     "static/media/ingt_design_arrow.svg": "/elearning/static/media/ingt_design_arrow.de468c5cb5fbcae21e76.svg",
-    "main.9730dece.css.map": "/elearning/static/css/main.9730dece.css.map",
-    "main.0968a366.js.map": "/elearning/static/js/main.0968a366.js.map"
+    "main.32690f5f.css.map": "/elearning/static/css/main.32690f5f.css.map",
+    "main.903e31c3.js.map": "/elearning/static/js/main.903e31c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.9730dece.css",
-    "static/js/main.0968a366.js"
+    "static/css/main.32690f5f.css",
+    "static/js/main.903e31c3.js"
   ]
 }
