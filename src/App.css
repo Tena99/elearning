@@ -1,4 +1,56 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
+}
+.design_choice {
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+    background: #afadad8c;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.design_choice a {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    display: block;
+    background: #3D948E;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.design_choice a:hover {
+    color: #DCCE90;
+}
+
+.design_choice h1 {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.design_choice p {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 145%;
+    margin-bottom: 40px;
+    text-align: center;
 }

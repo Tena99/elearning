@@ -8,9 +8,12 @@
   }
 }
 
+.service_container {
+  padding: 65px 20px;
+}
 @media screen and (max-width: 768px) {
   .service_container {
-    padding: 0 0 20px 0;
+    padding: 65px 15px 20px 15px;
   }
 }
 .service_container h3 {
@@ -21,6 +24,7 @@
   line-height: 60px;
   text-align: center;
   color: #999B9A;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 420px) {
   .service_container h3 {

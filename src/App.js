@@ -1,20 +1,21 @@
 import "./App.css";
-import Header from "./components/Header"
-import ServiceSection from "./pages/Services_Page";
-import DesignLearningBanner from "./components/Design_Learning_Banner";
-import InstructionalDesignBanner from "./components/Instructional_Design_Banner";
-import LeadForm from "./components/Lead_Form";
-import Footer from "./components/Footer";
+import {Link} from "react-router-dom";
+
+
 
 function App() {
   return (
     <div className="App">
-        <Header/>
-        <ServiceSection />
-        <DesignLearningBanner/>
-        <InstructionalDesignBanner/>
-        <LeadForm/>
-        <Footer/>
+
+
+
+        <div className={"design_choice"}>
+            <h1>Greetings!</h1>
+            <p>We recently changed the design and would like you to check it out. Otherwise you can always return to the old version of the site. Thank you!</p>
+
+        <Link to={"/n"}>New Design</Link>
+        <Link to={"/o"}>Old Design</Link>
+        </div>
     </div>
   );
 }

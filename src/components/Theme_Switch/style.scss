@@ -1,0 +1,77 @@
+@mixin max-screen($res){
+  @media screen and (max-width: $res){
+    @content;
+  }
+}
+
+.toggle {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  height: 30px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+span {
+  z-index: 2;
+  img {
+    text-align: center;
+  }
+}
+}
+
+.text {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.light {
+  background: #FFFFFF;
+}
+
+.light .toggle {
+  background-color: #EBEBEB ;
+}
+
+.toggle .ball {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: -9px;
+  left: 97px;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.light .toggle .ball {
+  background-color: white ;
+  border: 1px solid #EBEBEB;
+}
+
+.dark {
+  background: #FFFFFF;
+}
+
+.dark .toggle {
+  background-color: #343434 ;
+}
+
+.dark .toggle .ball {
+  background-color: white;
+  border: 1px solid #EBEBEB;
+  transform: translateX(-95px);
+}
+
+#toggle {
+  display: none;
+}
