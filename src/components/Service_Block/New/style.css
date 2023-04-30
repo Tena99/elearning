@@ -2,6 +2,44 @@
   display: none;
 }
 
+.dropdown-menu.show {
+  display: flex;
+  position: relative !important;
+  padding: 6px !important;
+  transform: translate(13px, 0px) !important;
+}
+
+.dropdown-item {
+  padding: 0 !important;
+}
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+.show.dropend {
+  display: flex;
+}
+
+.dropdown-toggle.show.btn.btn-primary, .dropdown-toggle.btn.btn-primary {
+  background-color: #E7D08C;
+  border-radius: 50%;
+  border: none;
+  padding: 12px !important;
+  height: 26px;
+  margin: auto;
+}
+.dropdown-toggle.show.btn.btn-primary:after, .dropdown-toggle.btn.btn-primary:after {
+  position: absolute;
+  top: 40%;
+  left: 46%;
+}
+
+.dropdown-toggle.show.btn.btn-primary:after {
+  position: absolute;
+  top: 19px;
+  left: 11px;
+}
+
 .n_service_blocks {
   display: flex;
   justify-content: space-between;
