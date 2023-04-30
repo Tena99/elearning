@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./style.css";
 
 function CustomSelect({ options }) {
@@ -21,9 +21,21 @@ function CustomSelect({ options }) {
         setIsCloseIcon((prevState) => !prevState);
     }
 
-    function handleClearClick() {
-        setSelectedOptions([]);
-    }
+    useEffect(() => {
+        const n_service_blocks = [...document.querySelectorAll("article.n_service_block")];
+        n_service_blocks.forEach((item) => {
+            if (selectedOptions.length > 0) {
+                const searchValue = item.innerHTML.toLowerCase();
+                if (selectedOptions.some(option => searchValue.includes(option.toLowerCase()))) {
+                    item.classList.remove("hidden");
+                } else {
+                    item.classList.add("hidden");
+                }
+            } else {
+                item.classList.remove("hidden");
+            }
+        });
+    }, [selectedOptions]);
 
     function handleRemoveOption(optionValue) {
         setSelectedOptions((prevSelectedOptions) =>
@@ -42,6 +54,9 @@ function CustomSelect({ options }) {
         {optionValue}
       </span>
         ));
+
+
+
 
     return (
         <div className="custom-select">

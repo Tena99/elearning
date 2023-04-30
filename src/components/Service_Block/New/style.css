@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .n_service_blocks {
   display: flex;
   justify-content: space-between;
