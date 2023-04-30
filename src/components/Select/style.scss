@@ -1,17 +1,33 @@
+@mixin max-screen($res){
+  @media screen and (max-width: $res){
+    @content;
+  }
+}
+
 .custom-select {
   display: flex;
+
+  @include max-screen(1100px) {
+    flex-wrap: wrap;
+  }
+  @include max-screen(560px) {
+    justify-content: center;
+  }
 }
 
 .select-container {
   display: flex;
-align-items: center;
+
+  @include max-screen(960px) {
+    margin-bottom: 10px;
+  }
 }
 
 .option-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 400px;
+  margin-left: 10px;
 }
 
 .selected-option_item, .option {
@@ -28,6 +44,22 @@ align-items: center;
   color: #343434;
   outline: none;
   margin-right: 10px;
+  white-space: nowrap;
+  @include max-screen(530px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.selected-option {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selected-option_item {
+  @include max-screen(975px) {
+    margin-bottom: 10px;
+  }
 }
 
 .remove-option {
@@ -35,7 +67,13 @@ padding: 0 5px;
 }
 
 .option {
-margin-bottom: 10px;
+  @include max-screen(975px) {
+    margin-bottom: 10px;
+  }
+
+  @include max-screen(560px) {
+    justify-content: center;
+  }
 
   &:not(:last-of-type) {
     margin-right: 10px;

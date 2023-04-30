@@ -1,0 +1,36 @@
+@mixin max-screen($res){
+  @media screen and (max-width: $res){
+    @content;
+  }
+}
+
+.alert {
+  position: absolute;
+  top: 0;
+  left: 40%;
+
+  @include max-screen(960px) {
+    left: 34%;
+  }
+
+  @include max-screen(725px) {
+    left: 29%;
+  }
+
+  @include max-screen(473px) {
+    left: 18%;
+  }
+
+  @include max-screen(370px) {
+    width: 100%;
+    left: 0;
+  }
+
+  .btn-close {
+    height: 10px;
+    width: 10px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+  }
+}

@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Formik } from 'formik';
 import "./style.css"
+import Alert_Message from "../Alert/component";
 
 function Lead_Form () {
+    const [formSubmitted, setFormSubmitted] = useState(false);
+
 
     return <div className={"lead_form"}>
 
@@ -37,6 +40,7 @@ function Lead_Form () {
                     .then((response) => response.json())
                     .then((json) => console.log(json));
                 setSubmitting(false);
+                setFormSubmitted(true)
             }}
         >
             {({
@@ -89,6 +93,8 @@ function Lead_Form () {
                     <button type="submit" disabled={isSubmitting}>
                         Send
                     </button>
+
+                    {formSubmitted ? <Alert_Message text={"Success! We'll contact you shortly"}/>  :  null}
                 </form>
             )}
         </Formik>
