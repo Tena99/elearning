@@ -1,7 +1,7 @@
 import "./style.css"
 import {Link} from "react-router-dom";
 
-function Footer () {
+function Footer ({home}) {
 
     return <footer>
         <div className={"footer_container"}>
@@ -12,40 +12,40 @@ function Footer () {
             <div className={"footer_item"}>
             <ul>
                 <li>
-                    <Link to={"/"}>Home eLearning</Link>
+                    <Link to={home}>Home eLearning</Link>
                 </li>
                 <li>
-                    <Link to={"/"}>Price Quote Services</Link>
+                    <Link to={"./price"}>Price Quote Services</Link>
                 </li>
                 <li>
-                    <Link to={"/"}>Instructional Design </Link>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <Link to={"/"}>eLearning Development</Link>
-                </li>
-                <li>
-                    <Link to={"/"}>   Mobile Learning</Link>
-                </li>
-                <li>
-                    <Link to={"/"}>Product Training</Link>
+                    <Link to={"./design"}>Instructional Design </Link>
                 </li>
             </ul>
 
             <ul>
                 <li>
-                    <Link to={"/"}>Custom eLearning</Link>
+                    <Link to={"./development"}>eLearning Development</Link>
                 </li>
                 <li>
-                    <Link to={"/"}>Custom eLearning</Link>
+                    <Link to={"./mobile"}>Mobile Learning</Link>
                 </li>
                 <li>
-                    <Link to={"/"}>eLearning Packages</Link>
+                    <Link to={"./training"}>Product Training</Link>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <Link to={"./custom"}>Custom eLearning</Link>
                 </li>
                 <li>
-                    <Link to={"/"}>Contact</Link>
+                    <Link to={"./retail"}>eLearning for Retail</Link>
+                </li>
+                <li>
+                    <Link to={"./packages"}>eLearning Packages</Link>
+                </li>
+                <li>
+                    <Link to={"./contact"}>Contact</Link>
                 </li>
             </ul>
             </div>

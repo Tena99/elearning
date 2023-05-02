@@ -2,7 +2,7 @@ import { useState } from "react";
 import {Link} from "react-router-dom";
 import "./style.css"
 
-export default function Menu() {
+export default function Menu({home}) {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
 
     return (
@@ -39,7 +39,7 @@ export default function Menu() {
             >
                 <ul>
                     <li>
-                        <Link to={"/elearning"}>Home</Link>
+                        <Link to={`${home}`}>Home</Link>
                     </li>
                     <li>
                         <Link to={"./services"}>Services</Link>

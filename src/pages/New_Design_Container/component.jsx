@@ -8,7 +8,7 @@ function New_design () {
         <Link to={"/o"} className={"design_change_old"}>Old design</Link>
         <CarouselComponent/>
         <Outlet/>
-        <Footer/>
+        <Footer home={"/n"}/>
     </ >
 }
 

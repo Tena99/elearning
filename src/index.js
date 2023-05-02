@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <OldDesignItem />,
+                element: <NewDesignItem/>
             },
             {
                 path: "services",
@@ -52,6 +52,22 @@ const router = createBrowserRouter([
             },
             {
                 path: "contact",
+                element: <UnderDevelopment/>
+            },
+            {
+                path: "mobile",
+                element: <UnderDevelopment/>
+            },
+            {
+                path: "training",
+                element: <UnderDevelopment/>
+            },
+            {
+                path: "custom",
+                element: <UnderDevelopment/>
+            },
+            {
+                path: "retail",
                 element: <UnderDevelopment/>
             },
         ],
@@ -87,6 +103,22 @@ const router = createBrowserRouter([
             },
             {
                 path: "contact",
+                element: <UnderDevelopment/>
+            },
+            {
+                path: "mobile",
+                element: <UnderDevelopment/>
+            },
+            {
+                path: "training",
+                element: <UnderDevelopment/>
+            },
+            {
+                path: "custom",
+                element: <UnderDevelopment/>
+            },
+            {
+                path: "retail",
                 element: <UnderDevelopment/>
             },
         ],

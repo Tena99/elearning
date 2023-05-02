@@ -1,5 +1,6 @@
 import "./style.css"
 import Menu from "../Menu"
+import React from "react";
 
 function Header () {
 
@@ -92,7 +93,7 @@ function Header () {
             </div>
         </div>
         </div>
-            <Menu />
+        <Menu home={"/o"}/>
     </header>
 }
 

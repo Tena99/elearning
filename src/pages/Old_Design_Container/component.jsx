@@ -8,7 +8,7 @@ function Old_design () {
         <Link to={"/n"} className={"design_change_new"}>New design</Link>
         <Header/>
         <Outlet/>
-        <Footer/>
+        <Footer home={"/o"}/>
     </ >
 }
 
