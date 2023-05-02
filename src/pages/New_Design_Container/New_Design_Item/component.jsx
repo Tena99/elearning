@@ -2,7 +2,7 @@ import ServiceSection from "../../../components/Service_Block/New/component";
 import DesignLearningBanner from "../../../components/Design_Learning_Banner/New/component";
 import InstructionalDesignBanner from "../../../components/Instructional_Design_Banner/component";
 import LeadForm from "../../../components/Lead_Form/component";
-import ScrollLine from "../../../components/Scroll_Line";
+
 
 function New_design_Components () {
     return <>

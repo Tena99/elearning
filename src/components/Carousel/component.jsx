@@ -153,7 +153,7 @@ function Carousel() {
             </div>
         </OwlCarousel>;
 
-        <Menu/>
+        <Menu home={"/n"}/>
     </div>
 
 }

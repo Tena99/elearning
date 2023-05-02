@@ -1,6 +1,7 @@
 .lead_form {
   padding: 50px 0 62px 0;
   background-color: #3D948C;
+  position: relative;
 }
 .lead_form h2 {
   font-family: "Museo Sans Cyrl", sans-serif;

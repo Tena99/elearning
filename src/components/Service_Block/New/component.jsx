@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from "react";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css";
 import ServiceItem from "./Service_item";
 import Search from "../../Search";
 import Select from "../../Select"
-import ScrollLine from "../../Scroll_Line"
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Pagination from 'react-bootstrap/Pagination';
 
 
 function ServiceBlocks() {
@@ -30,6 +32,8 @@ function ServiceBlocks() {
             svgLine.setAttribute('stroke', svgLineColour);
         })
 
+
+
     }, [svgStroke], [svgBackground], [setSvgBorder], [svgLineColour]);
 
     return (
@@ -46,16 +50,32 @@ function ServiceBlocks() {
             <div className={"n_service_block_btn-container"}>
                 <h5>Type</h5>
 
-                    <div className={"n_service_block_btns"}>
-                        <button type={"button"} className={"n_service_block_btn yw_btn"}
-                                onClick={() => {setSvgStroke('white'); setSvgBackground('#DCCE90'); setSvgBorder("#DCCE90"); setLineColour("#DCCE90")}}></button>
-                        <button type={"button"} className={"n_service_block_btn gn_btn"}
-                                onClick={() => {setSvgStroke('#FFFFFF'); setSvgBackground('#29B4AD'); setSvgBorder("#29B4AD"); setLineColour("#29B4AD")}}></button>
-                        <button type={"button"} className={"n_service_block_btn gn_tr_btn"}
-                                onClick={() => {setSvgStroke('#23B6B0'); setSvgBackground('transparent'); setSvgBorder("#23B6B0"); setLineColour("#23B6B0")}}></button>
-                        <button type={"button"} className={"n_service_block_btn gr_tr_btn"}
-                                onClick={() => {setSvgStroke('#B5B7B6'); setSvgBackground('transparent'); setSvgBorder("#B5B7B6"); setLineColour("#B5B7B6")}}></button>
-                    </div>
+                <Dropdown>
+                    <DropdownButton
+                        key={"end"}
+                        drop={"end"}
+                    >
+                            <Dropdown.Item>
+                                <button type={"button"} className={"n_service_block_btn yw_btn"}
+                                                     onClick={() => {setSvgStroke('white'); setSvgBackground('#DCCE90'); setSvgBorder("#DCCE90"); setLineColour("#DCCE90")}}></button>
+                            </Dropdown.Item>
+
+                        <Dropdown.Item>
+                            <button type={"button"} className={"n_service_block_btn gn_btn"}
+                                                      onClick={() => {setSvgStroke('#FFFFFF'); setSvgBackground('#29B4AD'); setSvgBorder("#29B4AD"); setLineColour("#29B4AD")}}></button>
+                        </Dropdown.Item>
+
+                        <Dropdown.Item>
+                            <button type={"button"} className={"n_service_block_btn gn_tr_btn"}
+                                                 onClick={() => {setSvgStroke('#23B6B0'); setSvgBackground('transparent'); setSvgBorder("#23B6B0"); setLineColour("#23B6B0")}}></button>
+                        </Dropdown.Item>
+
+                        <Dropdown.Item>
+                            <button type={"button"} className={"n_service_block_btn gr_tr_btn"}
+                                                 onClick={() => {setSvgStroke('#B5B7B6'); setSvgBackground('transparent'); setSvgBorder("#B5B7B6"); setLineColour("#B5B7B6")}}></button>
+                        </Dropdown.Item>
+                    </DropdownButton>
+                </Dropdown>
             </div>
 
                 <div className={"n_service_block_btn-container"}>
@@ -126,7 +146,13 @@ function ServiceBlocks() {
                 />
             </div>
 
-
+            <Pagination>
+                <Pagination.Prev />
+                <Pagination.Item active>{1}</Pagination.Item>
+                <Pagination.Item disabled>{2} </Pagination.Item>
+                <Pagination.Item disabled>{3}</Pagination.Item>
+                <Pagination.Next />
+            </Pagination>
 
         </div>
     );

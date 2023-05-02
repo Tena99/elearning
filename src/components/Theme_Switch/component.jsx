@@ -1,5 +1,5 @@
 import "./style.css";
-import {useState, useEffect} from "react";
+import {useEffect} from "react";
 
 
 function ThemeSwitch({isDark, handleToggle, setSwitchOn, switchOn}) {
@@ -74,9 +74,33 @@ function ThemeSwitch({isDark, handleToggle, setSwitchOn, switchOn}) {
           }
           
           .error_page.container  {
-              background: #646464!important;
-               color: white!important;
+          background: ${isDark ? "#646464!important" : "white!important"};
+          color: ${isDark ? "white!important" : "black!important"};
           }
+          
+          .search_btn input {
+          background: ${isDark ? "rgba(255, 255, 255, 0.1); " : " rgba(52, 52, 52, 0.1);"};
+        color: ${isDark ? "white!important" : "color: #343434!!important"};
+          }
+          
+          .search_icon button svg {
+          stroke:  ${isDark ? "#FFFFFF " : "#343434"};
+          }
+          
+          .sorry-message {
+         color: ${isDark ? "white!important" : "color: #343434!!important"};
+          }
+          
+       .pagination .page-item.active .page-link, .page-link {
+                    background: ${isDark ? "rgba(255, 255, 255, 0.1); " : " rgba(52, 52, 52, 0.1);"};
+                            color: ${isDark ? "white!important" : "color: #343434!!important"};
+          } 
+          
+           .pagination .page-item.disabled .page-link {
+                    background: ${isDark ? "rgba(255, 255, 255, 0.1); " : " rgba(52, 52, 52, 0.1);"};
+                            color: ${isDark ? "rgba(255, 255, 255, 0.5)" : "color: #343434!!important"};
+          } 
+          
           
           .header_carousel_item {
             background: ${isDark ? "#414141!important" : "#FFFFFF"}
